@@ -1,0 +1,43 @@
+body {
+  font-size: 1.25em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: #eee;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.fav:before, .not-fav:before {
+  content: ' ★ ';
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fav:before {
+  color: purple;
+}
+
+.not-fav:before {
+  color: #aaa;
+}
+
+.columns {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.column {
+  margin: 1em;
+}
